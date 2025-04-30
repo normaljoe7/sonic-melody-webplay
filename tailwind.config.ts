@@ -1,3 +1,4 @@
+
 import type { Config } from "tailwindcss";
 
 export default {
@@ -24,6 +25,18 @@ export default {
 				ring: 'hsl(var(--ring))',
 				background: 'hsl(var(--background))',
 				foreground: 'hsl(var(--foreground))',
+				spotify: {
+					base: '#121212',
+					darkest: '#000000',
+					dark: '#181818',
+					card: '#282828',
+					green: '#1DB954',
+					lightGreen: '#1ED760',
+					white: '#FFFFFF',
+					lightGray: '#B3B3B3',
+					mediumGray: '#535353',
+					darkGray: '#212121',
+				},
 				primary: {
 					DEFAULT: 'hsl(var(--primary))',
 					foreground: 'hsl(var(--primary-foreground))'
@@ -84,11 +97,20 @@ export default {
 					to: {
 						height: '0'
 					}
+				},
+				'fade-in': {
+					from: {
+						opacity: '0',
+					},
+					to: {
+						opacity: '1'
+					}
 				}
 			},
 			animation: {
 				'accordion-down': 'accordion-down 0.2s ease-out',
-				'accordion-up': 'accordion-up 0.2s ease-out'
+				'accordion-up': 'accordion-up 0.2s ease-out',
+				'fade-in': 'fade-in 0.3s ease-in'
 			}
 		}
 	},
